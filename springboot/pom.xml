@@ -14,10 +14,6 @@
     <name>ping-springboot</name>
     <description>ping command implemented with SpringBoot</description>
 
-    <properties>
-        <java.version>11</java.version>
-    </properties>
-
     <dependencies>
 
         <dependency>
