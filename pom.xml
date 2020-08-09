@@ -25,7 +25,7 @@
     </modules>
 
     <properties>
-        <java.version>13</java.version>
+        <java.version>11</java.version>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
         <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
         <springfox-version>3.0.0</springfox-version>
