@@ -47,6 +47,6 @@ public class PingController implements PublicApi, ReactiveHealthIndicator {
 
     private Mono<Health> checkDownstreamServiceHealth() {
         log.info("Running health check");
-        return Mono.just(new Health.Builder().up().withDetail("aMessage","everything ok").build());
+        return Mono.just(new Health.Builder().up().withDetail("message","everything ok").build());
     }
 }
