@@ -26,7 +26,7 @@ hs_err_pid*
 **/target
 **/*.iml
 
-.project
+***/.project
 ***/.classpath
-.factorypath
+***/.factorypath
 ***/.settings/***
