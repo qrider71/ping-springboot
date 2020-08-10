@@ -27,6 +27,6 @@ hs_err_pid*
 **/*.iml
 
 .project
-.classpath
+***/.classpath
 .factorypath
 ***/.settings/***
