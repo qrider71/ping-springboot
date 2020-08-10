@@ -3,3 +3,11 @@ image:
 
 tasks:
   - init: mvn clean install -DskipTests=true
+
+
+
+vscode:
+  extensions:
+    - Pivotal.vscode-spring-boot@1.20.0:jaH7mimG3KKfktrKqHw8Kg==
+    - cool2k.vscode-lombok@1.0.2:e816/wZO588Jp8PN58Wj6g==
+    - ms-azuretools.vscode-docker@1.4.1:yBHvaBNj24KgDg/PiQ2nLA==
