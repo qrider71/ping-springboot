@@ -19,6 +19,7 @@ public class PingService {
         pingResponse.setTimestamp(OffsetDateTime.now());
         getHostname().map(JsonNullable::of).ifPresent(pingResponse::setHostname);
         pingResponse.setMessages(Collections.nCopies(repeat,message));
+        log.info("Successfully received PING request with message " + message);
         return pingResponse;
     }
 
