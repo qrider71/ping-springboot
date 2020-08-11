@@ -15,7 +15,7 @@
     <description>ping command implemented with SpringBoot</description>
 
     <properties>
-        <!-- fabric8.build.strategy>s2i</fabric8.build.strategy -->
+        <fabric8.build.strategy>s2i</fabric8.build.strategy>
         <fabric8.mode>auto</fabric8.mode>
         <fabric8.generator.from>fabric8/s2i-java:3.1-java11</fabric8.generator.from>
     </properties>
@@ -124,30 +124,6 @@
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-resources-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>copy-fabric8-config</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>copy-resources</goal>
-                                </goals>
-                                <configuration>
-                                    <overwrite>true</overwrite>
-                                    <outputDirectory>${basedir}/target/fabric8-source</outputDirectory>
-                                    <resources>
-                                        <resource>
-                                            <directory>src/main/fabric8</directory>
-                                            <filtering>true</filtering>
-                                        </resource>
-                                    </resources>
-                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
